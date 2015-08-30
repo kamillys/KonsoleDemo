@@ -27,7 +27,7 @@ SplitTerm::SplitTerm(QWidget *parent) : QWidget(parent)
     connect(kk, SIGNAL(splitEvent(Qt::Orientation)), this, SLOT(addSplitTerm(Qt::Orientation)));
 }
 
-SplitTerm::SplitTerm(QWidget *parent, QWidget *konsole)
+SplitTerm::SplitTerm(QWidget *parent, QWidget *konsole) : QWidget(parent)
 {
 
     //TODO: Transparency like in Konsole
